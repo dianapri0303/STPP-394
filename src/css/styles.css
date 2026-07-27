@@ -1,7 +1,7 @@
+@import './base/variables.css';
 @import './base/reset.css';
 @import './base/base.css';
 @import './base/container.css';
-@import './base/variables.css';
 @import './base/typography.css';
 @import './base/layout.css';
 
