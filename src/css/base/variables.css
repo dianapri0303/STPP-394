@@ -1,0 +1,18 @@
+:root {
+  --white: #fff;
+  --black: #200f1d;
+  --blue: #2c4d90;
+  --cards: #f4f8fa;
+  --stroke: #eaeff2;
+  --primary-default: #9f4d6b;
+  --primary-hover: #823f57;
+  --primary-pressed: #763a4f;
+
+  --font-family: 'Baloo 2', sans-serif;
+  --second-family: 'Quicksand', sans-serif;
+  --third-family: 'Inter', sans-serif;
+
+  --container-padding-mob: 20px;
+  --container-padding-desk: 80px;
+  --section-padding: 50px;
+}
