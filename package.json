@@ -1,12 +1,12 @@
 {
-  "name": "pet-candy-puzzle",
+  "name": "stpp-394",
   "private": true,
   "version": "1.0.0",
   "description": "Landing page for Pet Candy Puzzle (STPP-394, urbandeck.online)",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/pet-candy-puzzle/",
+    "build": "vite build --base=/STPP-394/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview"
   },
