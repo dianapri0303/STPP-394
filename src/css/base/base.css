@@ -16,8 +16,16 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
+  background-color: #fff8fb;
+  color: var(--black);
 }
 
 main {
   flex-grow: 1;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
 }
