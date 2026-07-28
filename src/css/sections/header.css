@@ -1,9 +1,13 @@
+/* =========================
+   HEADER
+========================= */
+
 .header {
   position: sticky;
   top: 0;
   z-index: 30;
   width: 100%;
-  min-height: 90px;
+  height: 90px;
   background-color: var(--white);
 }
 
@@ -11,19 +15,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 90px;
-  gap: 32px;
+  height: 100%;
 }
 
 .header-container.container {
   max-width: 1280px;
+  padding: 0 16px;
 }
 
+/* =========================
+   LOGO
+========================= */
+
 .header-logo {
-  display: inline-flex;
-  flex: 0 0 auto;
+  display: flex;
   align-items: center;
-  margin-left: 80px;
 }
 
 .header-logo img {
@@ -32,21 +38,34 @@
   height: auto;
 }
 
+/* =========================
+   NAVIGATION
+========================= */
+
 .header-navigation {
   display: none;
 }
 
 .header-link,
 .mobile-link {
-  color: var(--black);
+  display: block;
   font-family: var(--second-family);
-  font-weight: 600;
   font-size: 20px;
+  font-weight: 600;
   line-height: 1.5;
-  text-align: center;
   color: var(--black);
   text-decoration: none;
+
   transition: color 180ms ease;
+}
+
+.header-link {
+  text-align: center;
+}
+
+.mobile-link {
+  width: 100%;
+  text-align: left;
 }
 
 .header-link:hover,
@@ -55,6 +74,10 @@
 .mobile-link:focus-visible {
   color: var(--primary-default);
 }
+
+/* =========================
+   GOOGLE PLAY BUTTON
+========================= */
 
 .header-store-link {
   display: none;
@@ -67,7 +90,7 @@
   width: 193px;
   height: 56px;
   padding: 0 22px;
-  border: 0;
+  border: none;
   border-radius: 50px;
   background-color: var(--primary-default);
   color: var(--white);
@@ -98,15 +121,19 @@
   width: 0;
   height: 0;
   margin-right: 9px;
+
   border-top: 6px solid transparent;
   border-bottom: 6px solid transparent;
   border-left: 9px solid currentColor;
 }
 
-@media only screen and (max-width: 767px) {
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
   .header-container {
     justify-content: flex-end;
-    padding: 0 16px;
   }
 
   .header-logo,
@@ -115,19 +142,15 @@
   }
 
   .burger-button {
-    display: inline-flex;
     margin-left: auto;
-    margin-right: 0;
-    position: static;
-    transform: none;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .header-container {
-    gap: 18px;
-  }
+/* =========================
+   TABLET & DESKTOP
+========================= */
 
+@media (min-width: 768px) {
   .header-container.container {
     padding: 0 24px;
   }
@@ -136,7 +159,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1 1 auto;
+    flex: 1;
+
     gap: clamp(18px, 2.5vw, 28px);
   }
 
@@ -145,7 +169,11 @@
   }
 }
 
-@media only screen and (min-width: 1440px) {
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media (min-width: 1440px) {
   .header-container.container {
     padding: 0 80px;
   }
