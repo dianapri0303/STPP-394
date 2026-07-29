@@ -5,21 +5,26 @@
     </a>
 
     <nav class="header-navigation" aria-label="Main navigation">
-      <a class="header-link" href="#about">About</a>
-      <a class="header-link" href="#how-to-play">How to Play</a>
-      <a class="header-link" href="#features">Features</a>
-      <a class="header-link" href="#characters">Characters</a>
-      <a class="header-link" href="#faq">FAQ</a>
+      <a class="header-link" data-menu-link href="#about">About</a>
+      <a class="header-link" data-menu-link href="#how-to-play">How to Play</a>
+      <a class="header-link" data-menu-link href="#features">Features</a>
+      <a class="header-link" data-menu-link href="#characters">Characters</a>
+      <a class="header-link" data-menu-link href="#faq">FAQ</a>
     </nav>
 
-    <button
-      class="store-link header-store-link"
-      type="button"
+    <a
+      class="google-link-btn header-store-link"
+      href="https://play.google.com/store/apps/details?id=com.matchgames.petcandypuzzle&hl=en&gl=us"
+      target="_blank"
+      rel="noopener noreferrer"
       aria-label="Get Pet Candy on Google Play"
     >
-      <span class="store-icon" aria-hidden="true"></span>
-      <span>Google Play</span>
-    </button>
+      <svg class="google-icon" width="24" height="24" aria-hidden="true">
+    <use href="./img/sprite.svg#icon-triangle-google-btn"></use>
+  </svg>
+  <span>Google Play</span>
+</a>
+    </a>
 
     <button
       class="burger-button"
@@ -30,7 +35,7 @@
       aria-expanded="false"
     >
       <svg class="burger-menu-icon" width="44" height="44" aria-hidden="true">
-        <use href="./img/sprite.svg#icon-burger-icon"></use>
+        <use href="./img/sprite.svg#icon-burger"></use>
       </svg>
     </button>
   </div>
@@ -59,21 +64,28 @@
       </button>
 
       <nav class="mobile-navigation" aria-label="Mobile navigation">
-        <a class="mobile-link" href="#about">About</a>
-        <a class="mobile-link" href="#how-to-play">How to Play</a>
-        <a class="mobile-link" href="#features">Features</a>
-        <a class="mobile-link" href="#characters">Characters</a>
-        <a class="mobile-link" href="#faq">FAQ</a>
+        <a class="mobile-link" data-menu-link href="#about">About</a>
+        <a class="mobile-link" data-menu-link href="#how-to-play"
+          >How to Play</a
+        >
+        <a class="mobile-link" data-menu-link href="#features">Features</a>
+        <a class="mobile-link" data-menu-link href="#characters">Characters</a>
+        <a class="mobile-link" data-menu-link href="#faq">FAQ</a>
       </nav>
 
-      <button
-        class="store-link mobile-store-link"
-        type="button"
+      <a
+        class="google-link-btn mobile-google-link"
+        href="https://play.google.com/store/apps/details?id=com.matchgames.petcandypuzzle&hl=en&gl=us"
+        target="_blank"
+        rel="noopener noreferrer"
         aria-label="Get Pet Candy on Google Play"
       >
-        <span class="store-icon" aria-hidden="true"></span>
-        <span>Google Play</span>
-      </button>
+        <svg class="google-icon" width="24" height="24" aria-hidden="true">
+    <use href="./img/sprite.svg#icon-triangle-google-btn"></use>
+  </svg>
+  <span>Google Play</span>
+</a>
+      </a>
     </div>
   </div>
 </header>
