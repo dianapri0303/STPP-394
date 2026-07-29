@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   display: flex;
-  background: url(../img/hero/background-hero.png);
+  background: url(../img/hero/background-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -59,7 +59,7 @@
 
 @media (max-width: 1439px) {
   .hero {
-    background: url(../img/hero/background-hero-mobile.png);
+    background: url(../img/hero/background-hero-mobile.jpg);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
