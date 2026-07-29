@@ -47,7 +47,7 @@
 .mobile-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(32, 15, 29, 0.9);
+background: rgba(var(--black-rgb), 0.9);
   opacity: 0;
   transition: opacity 250ms ease;
 }
