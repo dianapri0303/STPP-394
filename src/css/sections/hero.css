@@ -59,18 +59,26 @@
 
 @media (max-width: 1439px) {
   .hero {
+<<<<<<< HEAD
     background: url(../img/hero/background-hero-mobile.jpg);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
+=======
+    background-position: center top;
+>>>>>>> 3714c76 (hero mobile added)
   }
 
   .hero-container {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+<<<<<<< HEAD
     min-height: 900px;
     padding-top: 80px;
+=======
+    min-height: 812px;
+>>>>>>> 3714c76 (hero mobile added)
   }
 
   .hero-content {
