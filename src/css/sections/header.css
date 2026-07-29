@@ -92,6 +92,7 @@
     background: transparent;
   }
   .header-container {
+    padding: 24px 20px;
     justify-content: flex-end;
   }
 
