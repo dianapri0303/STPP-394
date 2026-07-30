@@ -3,6 +3,7 @@
 ========================= */
 
 .faq-container {
+  position: relative;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -33,6 +34,9 @@
 }
 
 .faq-image {
+  position: absolute;
+  right: 0;
+  top: 587px;
   width: 480px;
   flex-shrink: 0;
 }
