@@ -1,0 +1,43 @@
+.google-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 193px;
+  height: 56px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--primary-default);
+  color: var(--white);
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.google-link-btn:hover,
+.google-link-btn:focus-visible {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.google-link-btn:active {
+  background-color: var(--primary-pressed);
+  transform: translateY(0);
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  fill: var(--white);
+}
