@@ -1,0 +1,122 @@
+.legal-inner {
+  padding-top: 32px;
+  padding-bottom: calc(var(--section-padding) * 2);
+}
+
+.legal-updated {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--primary-default);
+  margin: 0 0 16px;
+}
+
+.legal-title {
+  font-size: 46px;
+  margin: 0 0 36px;
+}
+
+.legal-content a {
+  color: var(--primary-default);
+  text-decoration: underline;
+}
+
+.legal-section {
+  background-color: var(--cards);
+  border-radius: 16px;
+  padding: 16px 28px 16px 16px;
+  margin-bottom: 16px;
+}
+
+.legal-section:last-child {
+  margin-bottom: 0;
+}
+
+.legal-section > p:first-child {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--primary-default);
+  margin: 0 0 8px;
+}
+
+.legal-section--intro > p:first-child {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--black);
+}
+
+.legal-section > p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+
+.legal-section > p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-section ul {
+  list-style: disc;
+  margin: 0 0 16px;
+  padding-left: 24px;
+}
+
+.legal-section ol {
+  list-style: decimal;
+  margin: 0 0 16px;
+  padding-left: 24px;
+}
+
+.legal-section li {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+
+.legal-section li:last-child {
+  margin-bottom: 0;
+}
+
+.legal-section > ul:last-child,
+.legal-section > ol:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 1440px) {
+  .legal-inner {
+    padding-top: calc(var(--section-padding) * 2);
+    padding-left: 302px;
+    padding-right: 302px;
+  }
+
+  .legal-updated {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .legal-title {
+    font-size: 64px;
+    margin-bottom: 56px;
+  }
+
+  .legal-section {
+    border-radius: 24px;
+    padding: 35px 40px;
+    margin-bottom: 24px;
+  }
+
+  .legal-section > p:first-child {
+    margin-bottom: 16px;
+  }
+
+  .legal-section > p,
+  .legal-section--intro > p:first-child {
+    line-height: 1.75;
+  }
+}
