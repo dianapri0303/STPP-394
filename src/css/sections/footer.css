@@ -10,6 +10,7 @@
   max-width: 1280px;
   margin: 0 auto;
   min-height: 104px;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,9 +28,6 @@
   line-height: 1.6;
   text-align: center;
   color: var(--black);
-}
-
-.footer-link {
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -37,7 +35,7 @@
 .footer-link:hover {
   color: var(--primary-default);
 }
-.footer-link:focus {
+.footer-link:focus-visible {
   color: var(--primary-pressed);
 }
 
