@@ -12,10 +12,23 @@
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M4 22.667h24"></path>
 </symbol>
 <symbol id="icon-accord-down-btn" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.1818" d="M11.669 14.494l4.331 4.331 4.331-4.331"></path>
+  <path
+    stroke="currentColor"
+    fill="none"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+    stroke-width="2.1818"
+    d="M11.669 14.494l4.331 4.331 4.331-4.331" />
 </symbol>
+
 <symbol id="icon-accord-up-btn" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.1818" d="M11.669 17.506l4.331-4.331 4.331 4.331"></path>
+  <path
+    stroke="currentColor"
+    fill="none"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+    stroke-width="2.1818"
+    d="M11.669 17.506l4.331-4.331 4.331 4.331" />
 </symbol>
 <symbol id="icon-close-burger-btn" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.1818" d="M12.227 19.773l7.547-7.547"></path>

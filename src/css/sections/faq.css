@@ -139,7 +139,6 @@
 ========================= */
 
 @media (max-width: 1439px) {
-
   .faq-container {
     flex-direction: column;
     gap: 40px;
@@ -169,16 +168,15 @@
 
   .faq-item {
     width: 100%;
+    min-height: 96px;
     border-radius: 16px;
-    height: 96px;
   }
 
   .faq-btn {
-    padding: 26px 42px 26px 32px;
+    padding: 26px 42px 0px 32px;
     width: 100%;
     gap: 8px;
     align-items: flex-start;
-
   }
 
   .faq-icon {
@@ -194,12 +192,17 @@
   }
 
   .faq-answer {
-    padding: 0px 0px 0px 54px;
+    display: none;
+    min-height: 101px;
+    padding: 0 16px 20px 64px;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 64px;
   }
 
   .faq-answer p {
     font-size: 14px;
     line-height: 1.6;
+    width: 261px;
   }
 
   .faq-image {
