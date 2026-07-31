@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  min-height: 1979px;
 }
 
 .faq-content {
@@ -145,6 +146,9 @@
 
 @media (max-width: 1439px) {
   .faq-container {
+    position: static;
+    min-height: auto;
+    display: flex;
     flex-direction: column;
     gap: 40px;
   }
@@ -210,7 +214,7 @@
   }
 
   .faq-image {
-    position: unset;
+    position: static;
     width: 100%;
     max-width: 335px;
     margin: 0 auto;

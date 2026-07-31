@@ -59,9 +59,10 @@
 
 @media (max-width: 1439px) {
   .hero {
-    background: url(../../img/hero/background-hero-mobile.png);
-    background-position: center top;
-    background-repeat: no-repeat;
+background: url("../../img/hero/background-hero-mobile.png") center top /
+    100% 100% no-repeat;
+  min-height: 900px;
+
   }
 
   .hero-container {
@@ -103,7 +104,7 @@
   .hero-animal {
     content: url("../../img/hero/hamster-mobile.png");
     right: 50%;
-    bottom: -50px;
+    bottom: 0;
     transform: translateX(50%);
     width: 375px;
     max-width: none;
