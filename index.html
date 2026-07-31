@@ -1,143 +1,391 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/evpl_vite_template/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/evpl_vite_template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/evpl_vite_template/assets/styles-BvvI0Brj.css">
+
+    <title>Pet Candy Puzzle — Match Candy. Meet Cute Pets.</title>
+    <meta
+      name="description"
+      content="A sweet match-3 adventure with adorable pet companions. Swap candies, unlock puppies, kittens and bunnies, and puzzle through cozy sugar-sweet worlds."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="module" crossorigin src="/STPP-394/assets/main-DU0Xn4f_.js"></script>
+    <link rel="stylesheet" crossorigin href="/STPP-394/assets/main-baIeB81E.css">
   </head>
-  <body>
+
+  <body data-page="home">
     <header class="header">
-  <div class="container">
-    <div class="wrapper">
-      <nav class="nav">
-        <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="/evpl_vite_template/assets/sprite-E8vg0sBb.svg#logo"></use>
-          </svg>
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="/evpl_vite_template/assets/sprite-E8vg0sBb.svg#logo"></use>
-          </svg>
-        </a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-          </li>
-        </ul>
+  <div class="header-container container">
+    <a class="header-logo" href="./index.html" aria-label="Pet Candy home">
+      <img src="/STPP-394/assets/logo-DsNhd3Wy.svg" alt="Pet Candy" width="76" height="30" />
+    </a>
+
+       <nav class="header-navigation" aria-label="Main navigation">
+      <a class="header-link" data-menu-link href="./index.html#about">About</a>
+      <a class="header-link" data-menu-link href="./index.html#how-to-play">How to Play</a>
+      <a class="header-link" data-menu-link href="./index.html#features">Features</a>
+      <a class="header-link" data-menu-link href="./index.html#characters">Characters</a>
+      <a class="header-link" data-menu-link href="./index.html#faq">FAQ</a>
+    </nav>
+
+    <a
+      class="google-link-btn header-store-link"
+      href="https://play.google.com/store/apps/details?id=com.matchgames.petcandypuzzle&hl=en&gl=us"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Get Pet Candy on Google Play"
+    >
+      <svg class="google-icon" width="24" height="24" aria-hidden="true">
+    <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-triangle-google-btn"></use>
+  </svg>
+  <span>Google Play</span>
+</a>
+
+    <button
+      class="burger-button"
+      type="button"
+      data-action="open"
+      aria-label="Open menu"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+    >
+      <svg class="burger-menu-icon" width="44" height="44" aria-hidden="true">
+        <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div
+    class="mobile-menu"
+    id="mobile-menu"
+    data-visible="close"
+    aria-hidden="true"
+  >
+    <div class="mobile-backdrop" data-action="close"></div>
+    <div
+      class="mobile-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Mobile navigation"
+    >
+      <button
+        class="mobile-close"
+        type="button"
+        data-action="close"
+        aria-label="Close menu"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+            <nav class="mobile-navigation" aria-label="Mobile navigation">
+        <a class="mobile-link" data-menu-link href="./index.html#about">About</a>
+        <a class="mobile-link" data-menu-link href="./index.html#how-to-play"
+          >How to Play
+          </a>
+        <a class="mobile-link" data-menu-link href="./index.html#features">Features</a>
+        <a class="mobile-link" data-menu-link href="./index.html#characters">Characters</a>
+        <a class="mobile-link" data-menu-link href="./index.html#faq">FAQ</a>
       </nav>
-      <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">Open menu</button>
-        <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
-          </ul>
-          <button type="button" class="btn-close" data-action="close">close</button>
-        </div>
-      </div>
+
+      <a
+        class="google-link-btn mobile-google-link"
+        href="https://play.google.com/store/apps/details?id=com.matchgames.petcandypuzzle&hl=en&gl=us"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Get Pet Candy on Google Play"
+      >
+        <svg class="google-icon" width="24" height="24" aria-hidden="true">
+    <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-triangle-google-btn"></use>
+  </svg>
+  <span>Google Play</span>
+</a>
     </div>
   </div>
 </header>
 
+
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
+      <section class="hero" id="hero">
+  <div class="container hero-container">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Match Candy.
+        <span class="hero-title-highlight">Meet Cute Pets.</span>
+      </h1>
+      <p class="hero-description">
+        A sweet match-3 adventure with adorable companions by your side. Swap
+        candies, unlock puppies, kittens and bunnies, and puzzle your way
+        through cozy sugar-sweet worlds.
+      </p>
       <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
+        class="google-link-btn hero-google-link"
+        href="https://play.google.com/store/apps/details?id=com.matchgames.petcandypuzzle&hl=en&gl=us"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
+        aria-label="Get Pet Candy on Google Play"
       >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/evpl_vite_template/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
+        <svg class="google-icon" width="24" height="24" aria-hidden="true">
+          <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-triangle-google-btn"></use>
+        </svg>
+        <span>Google Play</span>
       </a>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+
+      <img
+  class="hero-animal"
+  src="/STPP-394/assets/hamster-desctop-gHfl36EO.png"
+  alt="Pet Candy character"
+  width="856"
+  height="805"
+/>
+</div>
+</section>
+
+      <section class="section about" id="about">
+  <div class="container">
+    <h2>About</h2>
   </div>
 </section>
 
-      <article class="badges">
+      <section class="section how-to-play" id="how-to-play">
   <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+    <h2>How to Play</h2>
+  </div>
+</section>
+
+      <section class="section features" id="features">
+  <div class="container">
+    <h2>Features</h2>
+  </div>
+</section>
+
+      <section class="section characters" id="characters">
+  <div class="container">
+    <p class="section-label">Characters</p>
+    <h2 class="characters-title">Meet your pet companions</h2>
+  </div>
+
+  <div class="characters-track" data-characters-track>
+    <ul class="characters-list">
+      <li class="characters-card">
+        <div class="characters-image">
+          <img src="/STPP-394/assets/Hamster-Cq_nGAmA.png" alt="Hamster" loading="lazy" />
+        </div>
+        <h3 class="characters-name">Hamster</h3>
+        <p class="characters-description">
+          Curious and clever, uncovering hidden rewards with every adventure.
+        </p>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
+
+      <li class="characters-card">
+        <div class="characters-image">
+          <img src="/STPP-394/assets/Kitten-DwxeIeHx.png" alt="Kitten" loading="lazy" />
+        </div>
+        <h3 class="characters-name">Kitten</h3>
+        <p class="characters-description">
+          Playful and quick, great for clearing tricky spots.
+        </p>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+
+      <li class="characters-card">
+        <div class="characters-image">
+          <img src="/STPP-394/assets/Bunny-D1SysUFE.png" alt="Bunny" loading="lazy" />
+        </div>
+        <h3 class="characters-name">Bunny</h3>
+        <p class="characters-description">
+          A cheerful companion that adds an extra bit of luck to every match.
+        </p>
+      </li>
+
+      <li class="characters-card">
+        <div class="characters-image">
+          <img src="/STPP-394/assets/Puppy-DjmDb5tv.png" alt="Puppy" loading="lazy" />
+        </div>
+        <h3 class="characters-name">Puppy</h3>
+        <p class="characters-description">
+          A loyal friend offering steady, helpful boosts.
+        </p>
       </li>
     </ul>
   </div>
-</article>
+</section>
+
+      <section class="faq" id="faq">
+  <div class="container faq-container">
+    <div class="faq-content">
+      <p class="section-label">FAQ</p>
+
+      <h2 class="faq-title">Quick answers</h2>
+
+      <div class="faq-list" id="faq-list">
+        <div class="faq-item" data-faq-item>
+          <button class="faq-btn" type="button" data-faq-button>
+            <svg class="faq-icon faq-icon-down" width="44" height="44" aria-hidden="true">
+              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-down-btn"></use>
+            </svg>
+
+            <svg class="faq-icon faq-icon-up" width="44" height="44" aria-hidden="true">
+              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-up-btn"></use>
+            </svg>
+
+            <span class="faq-question">
+              What is your favorite template from BRIX Templates?
+            </span>
+          </button>
+
+          <div class="faq-answer" data-faq-answer>
+            <p>Yes, with optional in-game purchases available.</p>
+          </div>
+        </div>
+
+        <div class="faq-item active" data-faq-item>
+          <button class="faq-btn" type="button" data-faq-button>
+            <svg class="faq-icon faq-icon-down" width="44" height="44" aria-hidden="true">
+              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-down-btn"></use>
+            </svg>
+
+            <svg class="faq-icon faq-icon-up" width="44" height="44" aria-hidden="true">
+              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-up-btn"></use>
+            </svg>
+
+            <span class="faq-question">
+              What is Webflow and why is it the best website builder?
+            </span>
+          </button>
+
+          <div class="faq-answer" data-faq-answer>
+            <p>Yes, with optional in-game purchases available.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-item>
+          <button class="faq-btn" type="button" data-faq-button>
+            <svg class="faq-icon faq-icon-down" width="44" height="44" aria-hidden="true">
+              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-down-btn"></use>
+            </svg>
+
+            <svg class="faq-icon faq-icon-up" width="44" height="44" aria-hidden="true">
+              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-up-btn"></use>
+            </svg>
+
+            <span class="faq-question">
+              How do I unlock new pets?
+            </span>
+          </button>
+
+          <div class="faq-answer" data-faq-answer>
+            <p>
+              Unlock pets by progressing through levels and completing special
+              challenges.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-item>
+          <button class="faq-btn" type="button" data-faq-button>
+            <svg class="faq-icon faq-icon-down" width="44" height="44" aria-hidden="true">
+              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-down-btn"></use>
+            </svg>
+
+            <svg class="faq-icon faq-icon-up" width="44" height="44" aria-hidden="true">
+              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-up-btn"></use>
+            </svg>
+
+            <span class="faq-question">
+              Do pets help during gameplay?
+            </span>
+          </button>
+
+          <div class="faq-answer" data-faq-answer>
+            <p>
+              Yes. Each pet has unique abilities that help you complete levels.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-item>
+          <button class="faq-btn" type="button" data-faq-button>
+            <svg class="faq-icon faq-icon-down" width="44" height="44" aria-hidden="true">
+              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-down-btn"></use>
+            </svg>
+
+            <svg class="faq-icon faq-icon-up" width="44" height="44" aria-hidden="true">
+              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-up-btn"></use>
+            </svg>
+
+            <span class="faq-question">
+              Is the game beginner-friendly?
+            </span>
+          </button>
+
+          <div class="faq-answer" data-faq-answer>
+            <p>
+              Absolutely! The first levels gradually introduce all mechanics.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq-item>
+          <button class="faq-btn" type="button" data-faq-button>
+            <svg class="faq-icon faq-icon-down" width="44" height="44" aria-hidden="true">
+              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-down-btn"></use>
+            </svg>
+
+            <svg class="faq-icon faq-icon-up" width="44" height="44" aria-hidden="true">
+              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-up-btn"></use>
+            </svg>
+
+            <span class="faq-question">
+              Are new levels added regularly?
+            </span>
+          </button>
+
+          <div class="faq-answer" data-faq-answer>
+            <p>
+              Yes. New levels, seasonal events and pets are added regularly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-image">
+  <picture>
+    <source
+      media="(max-width: 1439px)"
+      srcset="/STPP-394/assets/tel-foto-faq-mobile-QeUNQX_b.png"
+    />
+
+    <img
+      src="/STPP-394/assets/tel-foto-faq-BhDviaYb.jpg"
+      alt="Pet Candy gameplay"
+      width="480"
+      height="1244"
+    />
+  </picture>
+</div>
+  </div>
+</section>
+
+      <section class="section cta">
+  <div class="container">
+    <h2>Download</h2>
+  </div>
+</section>
 
     </main>
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
+    <!-- TODO: футер -->
+<footer class="footer"></footer>
 
 
   </body>

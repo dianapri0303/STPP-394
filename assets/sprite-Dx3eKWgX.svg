@@ -1,0 +1,39 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-triangle-google-btn" viewBox="0 0 32 32">
+<path d="M4 27.333v-22.667c0-0.8 0.533-1.467 1.2-1.733l13.467 13.067-13.467 13.067c-0.667-0.267-1.2-0.933-1.2-1.733z"></path>
+<path d="M22.4 19.733l-15.333 8.8 12.8-11.333 2.533 2.533z"></path>
+<path d="M26.933 14.4c0.667 0.4 1.067 0.933 1.067 1.6s-0.4 1.2-1.067 1.6l-3.467 2-2.933-2.933 2.933-2.933 3.467 0.667z"></path>
+<path d="M22.4 12.267l-2.533 2.533-12.8-11.333 15.333 8.8z"></path>
+</symbol>
+<symbol id="icon-burger" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M4 9.333h24"></path>
+<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M4 16h24"></path>
+<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M4 22.667h24"></path>
+</symbol>
+<symbol id="icon-accord-down-btn" viewBox="0 0 32 32">
+  <path
+    stroke="currentColor"
+    fill="none"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+    stroke-width="2.1818"
+    d="M11.669 14.494l4.331 4.331 4.331-4.331" />
+</symbol>
+
+<symbol id="icon-accord-up-btn" viewBox="0 0 32 32">
+  <path
+    stroke="currentColor"
+    fill="none"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+    stroke-width="2.1818"
+    d="M11.669 17.506l4.331-4.331 4.331 4.331" />
+</symbol>
+<symbol id="icon-close-burger-btn" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.1818" d="M12.227 19.773l7.547-7.547"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.1818" d="M19.773 19.773l-7.547-7.547"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.1818" d="M12 29.333h8c6.667 0 9.333-2.667 9.333-9.333v-8c0-6.667-2.667-9.333-9.333-9.333h-8c-6.667 0-9.333 2.667-9.333 9.333v8c0 6.667 2.667 9.333 9.333 9.333z"></path>
+</symbol>
+</defs>
+</svg>
