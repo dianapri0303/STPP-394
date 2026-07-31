@@ -99,7 +99,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.66;
-  color: #fff;
+  color: var(--white);
 }
 
 .faq-icon {
@@ -120,11 +120,11 @@
 }
 
 .faq-item.active .faq-btn {
-  color: #fff;
+  color: var(--white);
 }
 
 .faq-item.active .faq-question {
-  color: #fff;
+  color: var(--white);
 }
 
 .faq-item.active .faq-answer {
@@ -198,9 +198,8 @@
   .faq-answer {
     display: none;
     min-height: 101px;
-    padding: 0 16px 20px 64px;
+    padding: 0 0 0 64px;
     box-sizing: border-box;
-    padding: 0px 0px 0px 64px;
   }
 
   .faq-answer p {
