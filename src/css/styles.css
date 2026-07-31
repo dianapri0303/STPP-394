@@ -1,18 +1,22 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import './base/variables.css';
+@import './base/reset.css';
+@import './base/base.css';
+@import './base/container.css';
+@import './base/typography.css';
+@import './base/layout.css';
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+@import './components/button.css';
+@import './components/burger-menu.css';
+@import './components/accordion.css';
+@import './components/back-link.css';
+
+@import './sections/header.css';
+@import './sections/hero.css';
+@import './sections/about.css';
+@import './sections/how-to-play.css';
+@import './sections/features.css';
+@import './sections/characters.css';
+@import './sections/faq.css';
+@import './sections/cta.css';
+@import './sections/footer.css';
+@import './sections/legal.css';

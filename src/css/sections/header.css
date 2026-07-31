@@ -1,0 +1,137 @@
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  width: 100%;
+  background-color: var(--white);
+}
+
+.header-container {
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  display: block;
+  width: 76px;
+  height: auto;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.header-navigation {
+  display: none;
+}
+
+.header-link,
+.mobile-link {
+  display: block;
+  font-family: var(--second-family);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--black);
+  text-decoration: none;
+
+  transition: color 180ms ease;
+}
+
+.header-link {
+  text-align: center;
+}
+
+.mobile-link {
+  width: 100%;
+  text-align: left;
+}
+
+.header-link:hover,
+.header-link:focus-visible,
+.mobile-link:hover,
+.mobile-link:focus-visible {
+  color: var(--primary-default);
+}
+
+/* =========================
+   GOOGLE PLAY BUTTON
+========================= */
+
+.header-store-link {
+  display: none;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 1439px) {
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: transparent;
+  }
+  .header-container {
+    padding: 24px 20px;
+    justify-content: flex-end;
+  }
+
+  .header-logo,
+  .header-navigation,
+  .header-store-link {
+    display: none;
+  }
+
+  .burger-button {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media (min-width: 1440px) {
+  .header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 32px;
+  }
+
+  .header-store-link {
+    display: inline-flex;
+  }
+
+  .burger-button {
+    display: none;
+  }
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+  }
+}
+

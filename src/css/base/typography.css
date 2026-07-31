@@ -1,0 +1,27 @@
+body {
+  font-family: var(--second-family);
+  color: var(--black);
+  background-color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--black);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
