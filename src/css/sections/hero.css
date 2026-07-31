@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   display: flex;
-  background: url(../img/hero/background-hero.png);
+  background: url(../../img/hero/background-hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -59,7 +59,7 @@
 
 @media (max-width: 1439px) {
   .hero {
-    background: url(../img/hero/background-hero-mobile.png);
+    background: url(../../img/hero/background-hero-mobile.png);
     background-position: center top;
     background-repeat: no-repeat;
   }
@@ -101,7 +101,7 @@
   }
 
   .hero-animal {
-    content: url("../img/hero/hamster-mobile.png");
+    content: url("../../img/hero/hamster-mobile.png");
     right: 50%;
     bottom: -50px;
     transform: translateX(50%);
