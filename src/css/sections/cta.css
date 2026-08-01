@@ -1,0 +1,62 @@
+/* =========================
+   CTA
+========================= */
+
+.cta-content {
+  background: var(--cards);
+  border-radius: 16px;
+  padding: 67px 211px;
+  text-align: center;
+}
+
+.cta-title {
+  margin-bottom: 16px;
+  font-family: var(--font-family);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--black);
+}
+
+.cta-text {
+  max-width: 765px;
+  margin: 0 auto 32px;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--black);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 1439px) {
+  .cta-content {
+    background: transparent;
+    max-width: 335px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+
+  .cta-title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  .cta-text {
+    max-width: 430px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 2.29;
+  }
+}
+.mobile-google-link {
+    width: 100%;
+    max-width: 335px;
+    margin-top: auto;
+    align-self: center;}
