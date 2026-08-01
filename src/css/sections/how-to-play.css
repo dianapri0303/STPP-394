@@ -37,8 +37,8 @@
 
 .how-to-play-step {
   display: flex;
-  align-items: center;
-  gap: 16px;
+  align-items: flex-start;
+  gap: 14px;
 }
 
 .how-to-play-number {
@@ -89,7 +89,7 @@
 
   .how-to-play-content {
     display: flex;
-    justify-content: space-between;
+    gap: 68px;
   }
 
   .how-to-play-image {
