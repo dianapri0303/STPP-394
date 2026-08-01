@@ -1,6 +1,9 @@
 /* =========================
    CTA
 ========================= */
+.cta {
+  padding-top: 50px;
+}
 
 .cta-content {
   background: var(--cards);
