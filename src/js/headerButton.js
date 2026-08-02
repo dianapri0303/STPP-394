@@ -1,15 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
   const backButton = document.getElementById('header-back-link');
-  const navigation = document.querySelector('.header-navigation');
+  const navigation = document.getElementById('header-navigation');
+  const logo = document.getElementById('header-logo');
 
   const currentPage = window.location.pathname.split('/').pop();
 
-  const isPolicyPage =
+  const isLegalPage =
     currentPage === 'privacy-policy.html' ||
     currentPage === 'terms-of-service.html';
 
-  if (isPolicyPage) {
-    backButton?.classList.remove('is-hidden');
-    navigation?.classList.add('is-hidden');
+  if (!isLegalPage) return;
+
+  backButton.dataset.visible = 'true';
+  navigation.dataset.visible = 'false';
+
+  if (window.innerWidth < 1440) {
+    logo.dataset.visible = 'false';
   }
 });
