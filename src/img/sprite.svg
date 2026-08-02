@@ -1,5 +1,14 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-btn-header-back" viewBox="0 0 32 32">
+  <path
+    d="M19.244 6.667l-9.333 9.333 9.333 9.333"
+    stroke="currentColor"
+    stroke-width="2.1818"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+  </path>
+</symbol>
 <symbol id="icon-triangle-google-btn" viewBox="0 0 32 32">
 <path d="M4 27.333v-22.667c0-0.8 0.533-1.467 1.2-1.733l13.467 13.067-13.467 13.067c-0.667-0.267-1.2-0.933-1.2-1.733z"></path>
 <path d="M22.4 19.733l-15.333 8.8 12.8-11.333 2.533 2.533z"></path>

@@ -1,0 +1,30 @@
+/* =========================
+   BACK LINK
+========================= */
+
+.header-back-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 18px;
+  color: var(--black);
+
+  transition: color 180ms ease;
+}
+
+.header-back-link:hover,
+.header-back-link:focus-visible {
+  color: var(--primary-default);
+}
+
+.header-back-icon {
+  width: 44px;
+  height: 44px;
+  color: var(--black);
+  fill: none;
+}
+
+.is-hidden {
+  display: none;
+}
+
