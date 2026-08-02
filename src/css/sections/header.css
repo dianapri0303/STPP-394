@@ -37,8 +37,12 @@
    NAVIGATION
 ========================= */
 
-.header-navigation.is-hidden {
+#header-navigation[data-visible='false'] {
   visibility: hidden;
+}
+
+#header-back-link[data-visible='false'] {
+  display: none;
 }
 
 .header-link,
@@ -86,6 +90,7 @@
   .header {
     background: transparent;
   }
+
   .header-container {
     padding: 24px 20px;
     justify-content: flex-end;
@@ -94,6 +99,10 @@
   .header-logo,
   .header-navigation,
   .header-store-link {
+    display: none;
+  }
+
+  #header-logo[data-visible='false'] {
     display: none;
   }
 

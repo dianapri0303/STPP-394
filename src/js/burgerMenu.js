@@ -1,5 +1,5 @@
 const openBtnEl = document.querySelector('[data-action="open"]');
-const burgerMenuEl = document.querySelector('[data-visible]');
+const burgerMenuEl = document.getElementById('mobile-menu');
 const closeActionEls = document.querySelectorAll('[data-action="close"]');
 const mobileMenuLinkEls = document.querySelectorAll('[data-menu-link]');
 
@@ -12,6 +12,7 @@ if (openBtnEl && burgerMenuEl) {
   };
 
   const closeMenu = () => {
+    openBtnEl.focus();
     burgerMenuEl.dataset.visible = 'close';
     burgerMenuEl.setAttribute('aria-hidden', 'true');
     openBtnEl.setAttribute('aria-expanded', 'false');
