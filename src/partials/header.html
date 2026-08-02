@@ -3,19 +3,30 @@
     <a
       id="header-back-link"
       href="./index.html"
-      class="header-back-link is-hidden"
+      class="header-back-link"
       aria-label="Back"
+      data-visible="false"
     >
       <svg class="header-back-icon" width="44" height="44">
         <use href="./img/sprite.svg#icon-btn-header-back"></use>
       </svg>
     </a>
 
-    <a class="header-logo" href="./index.html" aria-label="Pet Candy home">
+    <a
+      id="header-logo"
+      class="header-logo"
+      href="./index.html"
+      aria-label="Pet Candy home"
+      data-visible="true"
+    >
       <img src="./img/logo.svg" alt="Pet Candy" width="76" height="30" />
     </a>
 
-    <nav class="header-navigation" aria-label="Main navigation">
+    <nav
+      id="header-navigation"
+      class="header-navigation"
+      aria-label="Main navigation"
+    >
       <a class="header-link" data-menu-link href="./index.html#about">About</a>
       <a class="header-link" data-menu-link href="./index.html#how-to-play"
         >How to Play</a
