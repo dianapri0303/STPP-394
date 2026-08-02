@@ -1,9 +1,7 @@
 /* =========================
    FAQ
 ========================= */
-.faq {
-  padding-top: 50px;
-}
+
 .faq-container {
   display: flex;
   align-items: flex-start;
@@ -47,7 +45,6 @@
   height: auto;
 }
 
-
 /* =========================
    MOBILE
 ========================= */
@@ -57,7 +54,7 @@
     min-height: auto;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 36px;
   }
 
   .faq-content {
@@ -67,6 +64,7 @@
   }
 
   .section-label {
+    margin-top: 50px;
     margin-bottom: 16px;
     font-size: 14px;
   }
@@ -76,5 +74,11 @@
     margin-bottom: 32px;
     font-size: 46px;
     line-height: 1.1;
+  }
+
+  .faq-image {
+    width: 100%;
+    max-width: 335px;
+    margin: 0 auto;
   }
 }
