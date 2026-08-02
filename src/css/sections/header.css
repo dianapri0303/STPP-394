@@ -37,8 +37,8 @@
    NAVIGATION
 ========================= */
 
-.header-navigation {
-  display: none;
+.header-navigation.is-hidden {
+  visibility: hidden;
 }
 
 .header-link,
@@ -83,7 +83,7 @@
 ========================= */
 
 @media (max-width: 1439px) {
-.header {
+  .header {
     background: transparent;
   }
   .header-container {
@@ -129,4 +129,3 @@
     align-items: center;
   }
 }
-
