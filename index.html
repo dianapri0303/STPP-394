@@ -17,22 +17,39 @@
       rel="stylesheet"
     />
 
-    <script type="module" crossorigin src="/STPP-394/assets/main-CqscQ2JP.js"></script>
-    <link rel="stylesheet" crossorigin href="/STPP-394/assets/main-CX6LaJuG.css">
+    <script type="module" crossorigin src="/STPP-394/assets/main-Czn8C4e4.js"></script>
+    <link rel="stylesheet" crossorigin href="/STPP-394/assets/main-vQNfUiTE.css">
   </head>
 
   <body data-page="home">
     <header class="header">
   <div class="header-container container">
+    <a
+      id="header-back-link"
+      href="./index.html"
+      class="header-back-link is-hidden"
+      aria-label="Back"
+    >
+      <svg class="header-back-icon" width="44" height="44">
+        <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-btn-header-back"></use>
+      </svg>
+    </a>
+
     <a class="header-logo" href="./index.html" aria-label="Pet Candy home">
       <img src="/STPP-394/assets/logo-DsNhd3Wy.svg" alt="Pet Candy" width="76" height="30" />
     </a>
 
-       <nav class="header-navigation" aria-label="Main navigation">
+    <nav class="header-navigation" aria-label="Main navigation">
       <a class="header-link" data-menu-link href="./index.html#about">About</a>
-      <a class="header-link" data-menu-link href="./index.html#how-to-play">How to Play</a>
-      <a class="header-link" data-menu-link href="./index.html#features">Features</a>
-      <a class="header-link" data-menu-link href="./index.html#characters">Characters</a>
+      <a class="header-link" data-menu-link href="./index.html#how-to-play"
+        >How to Play</a
+      >
+      <a class="header-link" data-menu-link href="./index.html#features"
+        >Features</a
+      >
+      <a class="header-link" data-menu-link href="./index.html#characters"
+        >Characters</a
+      >
       <a class="header-link" data-menu-link href="./index.html#faq">FAQ</a>
     </nav>
 
@@ -44,10 +61,10 @@
       aria-label="Get Pet Candy on Google Play"
     >
       <svg class="google-icon" width="24" height="24" aria-hidden="true">
-    <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-triangle-google-btn"></use>
-  </svg>
-  <span>Google Play</span>
-</a>
+        <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-triangle-google-btn"></use>
+      </svg>
+      <span>Google Play</span>
+    </a>
 
     <button
       class="burger-button"
@@ -58,7 +75,7 @@
       aria-expanded="false"
     >
       <svg class="burger-menu-icon" width="44" height="44" aria-hidden="true">
-        <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-burger"></use>
+        <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-burger"></use>
       </svg>
     </button>
   </div>
@@ -86,13 +103,19 @@
         <span aria-hidden="true"></span>
       </button>
 
-            <nav class="mobile-navigation" aria-label="Mobile navigation">
-        <a class="mobile-link" data-menu-link href="./index.html#about">About</a>
+      <nav class="mobile-navigation" aria-label="Mobile navigation">
+        <a class="mobile-link" data-menu-link href="./index.html#about"
+          >About</a
+        >
         <a class="mobile-link" data-menu-link href="./index.html#how-to-play"
           >How to Play
-          </a>
-        <a class="mobile-link" data-menu-link href="./index.html#features">Features</a>
-        <a class="mobile-link" data-menu-link href="./index.html#characters">Characters</a>
+        </a>
+        <a class="mobile-link" data-menu-link href="./index.html#features"
+          >Features</a
+        >
+        <a class="mobile-link" data-menu-link href="./index.html#characters"
+          >Characters</a
+        >
         <a class="mobile-link" data-menu-link href="./index.html#faq">FAQ</a>
       </nav>
 
@@ -104,10 +127,10 @@
         aria-label="Get Pet Candy on Google Play"
       >
         <svg class="google-icon" width="24" height="24" aria-hidden="true">
-    <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-triangle-google-btn"></use>
-  </svg>
-  <span>Google Play</span>
-</a>
+          <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-triangle-google-btn"></use>
+        </svg>
+        <span>Google Play</span>
+      </a>
     </div>
   </div>
 </header>
@@ -134,7 +157,7 @@
         aria-label="Get Pet Candy on Google Play"
       >
         <svg class="google-icon" width="24" height="24" aria-hidden="true">
-          <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-triangle-google-btn"></use>
+          <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-triangle-google-btn"></use>
         </svg>
         <span>Google Play</span>
       </a>
@@ -399,7 +422,7 @@
       <h2 class="faq-title">Quick answers</h2>
 
       <div class="faq-list" id="faq-list">
-        <div class="faq-item" data-faq-item>
+        <div class="faq-item" data-faq-item data-open="false">
           <button class="faq-btn" type="button" data-faq-button>
             <svg
               class="faq-icon faq-icon-down"
@@ -407,7 +430,7 @@
               height="44"
               aria-hidden="true"
             >
-              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-down-btn"></use>
+              <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-accord-down-btn"></use>
             </svg>
 
             <svg
@@ -416,7 +439,7 @@
               height="44"
               aria-hidden="true"
             >
-              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-up-btn"></use>
+              <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-accord-up-btn"></use>
             </svg>
 
             <span class="faq-question">
@@ -429,7 +452,7 @@
           </div>
         </div>
 
-        <div class="faq-item active" data-faq-item>
+        <div class="faq-item" data-faq-item data-open="false">
           <button class="faq-btn" type="button" data-faq-button>
             <svg
               class="faq-icon faq-icon-down"
@@ -437,7 +460,7 @@
               height="44"
               aria-hidden="true"
             >
-              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-down-btn"></use>
+              <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-accord-down-btn"></use>
             </svg>
 
             <svg
@@ -446,7 +469,7 @@
               height="44"
               aria-hidden="true"
             >
-              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-up-btn"></use>
+              <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-accord-up-btn"></use>
             </svg>
 
             <span class="faq-question"> How do I unlock new pets? </span>
@@ -457,7 +480,7 @@
           </div>
         </div>
 
-        <div class="faq-item" data-faq-item>
+        <div class="faq-item" data-faq-item data-open="false">
           <button class="faq-btn" type="button" data-faq-button>
             <svg
               class="faq-icon faq-icon-down"
@@ -465,7 +488,7 @@
               height="44"
               aria-hidden="true"
             >
-              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-down-btn"></use>
+              <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-accord-down-btn"></use>
             </svg>
 
             <svg
@@ -474,7 +497,7 @@
               height="44"
               aria-hidden="true"
             >
-              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-up-btn"></use>
+              <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-accord-up-btn"></use>
             </svg>
 
             <span class="faq-question"> Do pets help during gameplay? </span>
@@ -485,7 +508,7 @@
           </div>
         </div>
 
-        <div class="faq-item" data-faq-item>
+        <div class="faq-item" data-faq-item data-open="false">
           <button class="faq-btn" type="button" data-faq-button>
             <svg
               class="faq-icon faq-icon-down"
@@ -493,7 +516,7 @@
               height="44"
               aria-hidden="true"
             >
-              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-down-btn"></use>
+              <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-accord-down-btn"></use>
             </svg>
 
             <svg
@@ -502,7 +525,7 @@
               height="44"
               aria-hidden="true"
             >
-              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-up-btn"></use>
+              <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-accord-up-btn"></use>
             </svg>
 
             <span class="faq-question"> Is the game beginner-friendly? </span>
@@ -513,7 +536,7 @@
           </div>
         </div>
 
-        <div class="faq-item" data-faq-item>
+        <div class="faq-item" data-faq-item data-open="false">
           <button class="faq-btn" type="button" data-faq-button>
             <svg
               class="faq-icon faq-icon-down"
@@ -521,7 +544,7 @@
               height="44"
               aria-hidden="true"
             >
-              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-down-btn"></use>
+              <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-accord-down-btn"></use>
             </svg>
 
             <svg
@@ -530,7 +553,7 @@
               height="44"
               aria-hidden="true"
             >
-              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-up-btn"></use>
+              <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-accord-up-btn"></use>
             </svg>
 
             <span class="faq-question"> Are new levels added regularly? </span>
@@ -541,7 +564,7 @@
           </div>
         </div>
 
-        <div class="faq-item" data-faq-item>
+        <div class="faq-item" data-faq-item data-open="false">
           <button class="faq-btn" type="button" data-faq-button>
             <svg
               class="faq-icon faq-icon-down"
@@ -549,7 +572,7 @@
               height="44"
               aria-hidden="true"
             >
-              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-down-btn"></use>
+              <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-accord-down-btn"></use>
             </svg>
 
             <svg
@@ -558,7 +581,7 @@
               height="44"
               aria-hidden="true"
             >
-              <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-accord-up-btn"></use>
+              <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-accord-up-btn"></use>
             </svg>
 
             <span class="faq-question">
@@ -612,7 +635,7 @@
         aria-label="Get Pet Candy on Google Play"
       >
         <svg class="google-icon" width="24" height="24" aria-hidden="true">
-          <use href="/STPP-394/assets/sprite-Dx3eKWgX.svg#icon-triangle-google-btn"></use>
+          <use href="/STPP-394/assets/sprite-BXb7WV65.svg#icon-triangle-google-btn"></use>
         </svg>
         <span>Google Play</span>
       </a>
