@@ -5,16 +5,18 @@ if (trackEl) {
   let startX = 0;
   let scrollStart = 0;
 
+  trackEl.addEventListener('dragstart', event => event.preventDefault());
+
   trackEl.addEventListener('mousedown', event => {
     isDown = true;
-    trackEl.classList.add('is-dragging');
+    trackEl.dataset.dragging = 'true';
     startX = event.pageX;
     scrollStart = trackEl.scrollLeft;
   });
 
   window.addEventListener('mouseup', () => {
     isDown = false;
-    trackEl.classList.remove('is-dragging');
+    delete trackEl.dataset.dragging;
   });
 
   window.addEventListener('mousemove', event => {
