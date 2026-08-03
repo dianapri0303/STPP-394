@@ -17,9 +17,10 @@
   display: none;
 }
 
-.characters-track.is-dragging {
+.characters-track[data-dragging] {
   cursor: grabbing;
   scroll-snap-type: none;
+  user-select: none;
 }
 
 .characters-list {
@@ -65,7 +66,11 @@
   right: 0;
   bottom: 0;
   height: 42px;
-  background: linear-gradient(0deg, var(--cards) 0%, rgba(var(--cards-rgb), 0) 100%);
+  background: linear-gradient(
+    0deg,
+    var(--cards) 0%,
+    rgba(var(--cards-rgb), 0) 100%
+  );
   pointer-events: none;
 }
 
